@@ -11,10 +11,17 @@ namespace ConsoleApp1
         {
             Bank bankA = new Bank();
             bankA.Consumers = new List<IClient>();
+            while (true)
+            {
+                Console.WriteLine("Меню:");
+                Console.WriteLine("1. Создать клиента");
+                Console.WriteLine("2. Работа с клиентом");
+                Console.WriteLine("3. Удалить клиента");
+            }
+           
+            
             Person p = new Person("Джон", "Смитт");
             bankA.Consumers.Add(p);
-            Company OOO = new Company("ООО ВЗЛОМ ЖОПЫ");
-            bankA.Consumers.Add(OOO);
             bankA.PrintConsumersList();
         }
     }

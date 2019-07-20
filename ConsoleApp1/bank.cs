@@ -7,6 +7,10 @@ namespace ConsoleApp1
     class Bank
     {
         public List<IClient> Consumers;
+        public Bank()
+        {
+            Consumers = new List<IClient>();
+        }
 
         public void PrintConsumersList()
         {
