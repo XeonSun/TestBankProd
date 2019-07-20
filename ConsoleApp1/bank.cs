@@ -16,7 +16,7 @@ namespace ConsoleApp1
         {
             foreach(var c in Consumers)
             {
-                Console.WriteLine($"{c.GetInfo()}");
+                Console.WriteLine($"{c.GetInfo() } имееет на счету {c.Money}");
             }
         }
     }

@@ -9,6 +9,7 @@ namespace ConsoleApp1
         public string Name { get; }
         public string Family { get; }
         private double _money;
+        public double Money {get{return _money;} }
         public event MoneyTransferHandler Added;
         public event MoneyTransferHandler Removed;
         public event MoneyTransferHandler Error;

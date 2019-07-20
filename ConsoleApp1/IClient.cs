@@ -9,7 +9,7 @@ namespace ConsoleApp1
         event MoneyTransferHandler Added;
         event MoneyTransferHandler Removed;
         event MoneyTransferHandler Error;
-
+        double Money { get; }
         void AddMoney(double value);
         bool SpendMoney(double value);
 
